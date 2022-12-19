@@ -1,0 +1,32 @@
+.product-container {
+    height: 400px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &.disabled {
+        color: lightgray;
+
+        .product-image { 
+            opacity: 0.3;
+        }
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    .product-image {
+        height: 225px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+    }
+}

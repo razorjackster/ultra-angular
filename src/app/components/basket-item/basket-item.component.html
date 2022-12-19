@@ -1,0 +1,11 @@
+<div class="basket-item-container card shadow-sm">
+    <div class="row">
+        <div class="product-image col-12 col-md-3" [style.background-image]="'url(' + data.image + ')'"></div>
+        <div class="product-info col-12 col-md-9">
+            <div class="product-name">{{data.description}}</div>
+            <div class="product-price">{{formatCurrency(data.price)}}</div>
+        </div>
+    </div>
+    
+    <i class="btn-delete fa-regular fa-trash-can" (click)="deleteItemClick()"></i>
+</div>

@@ -1,0 +1,7 @@
+<div class="marketplace-container">
+    <div class="row g-5">
+        <div *ngFor="let item of visibleProducts" class="product col-12 col-md-6 col-xl-3">
+            <app-product [data]="item" [disabled]="isItemDisabled(item, storeData.list)" (clicked)="itemClicked($event)"></app-product>
+        </div>
+    </div>
+</div>

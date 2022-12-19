@@ -1,0 +1,36 @@
+.basket-item-container {
+    padding: 10px;
+    padding-right: 80px;
+    margin-bottom: 10px;
+
+
+    .product-info {
+        display: inline-block;
+
+        .product-name {
+            height: 50px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .product-image {
+        height: 80px;
+        width: 120px;
+        display: inline-block;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 8px;
+    }
+
+    .btn-delete {
+        float: right;
+        cursor: pointer;
+        font-size: 20px;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+    }
+}

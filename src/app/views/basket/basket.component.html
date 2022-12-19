@@ -1,0 +1,22 @@
+<div class="basket-container">
+    <div class="basket-items" *ngIf="basketList$ | async; let basket">
+
+        <app-basket-item *ngFor="let item of basket.list" [data]="item" (deleteClicked)="deleteClicked($event)"></app-basket-item>
+
+        <div class="total-box">
+            Total: {{formatCurrency(basket.total)}}
+        </div>
+
+        <button 
+            routerLink="/checkout" 
+            type="button" 
+            class="btn btn-primary" 
+            [disabled]="basket.list.length < 1 || basket.funds < 0"
+        >Checkout</button>
+
+        <div class="text-danger" *ngIf="basket.funds < 0">
+            Your balance is not sufficient!
+        </div>
+        
+    </div>
+</div>

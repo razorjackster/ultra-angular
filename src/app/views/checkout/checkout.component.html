@@ -1,0 +1,74 @@
+<div class="container checkout-container" *ngIf="!success && (basketList$ | async); let basket">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+     
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstname">*Name</label>
+                <input type="text" id="firstname" class="form-control" placeholder="First" formControlName="firstname" required>
+                <span class="text-danger" *ngIf="(contactForm.controls.firstname.touched || submitted) && contactForm.controls.firstname.errors?.['required']">
+                    First name is required
+                </span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastname"></label>
+                <input type="text" id="lastname" class="form-control" placeholder="Last" formControlName="lastname" required>
+                <span class="text-danger" *ngIf="(contactForm.controls.lastname.touched || submitted) && contactForm.controls.lastname.errors?.['required']">
+                    Last name is required
+                </span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="street">*Address</label>
+                <input type="text" id="street" class="form-control" placeholder="Street" formControlName="street" required>
+                <span class="text-danger" *ngIf="(contactForm.controls.street.touched || submitted) && contactForm.controls.street.errors?.['required']">
+                    Street is required
+                </span>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="City" formControlName="city" required>
+                <span class="text-danger" *ngIf="(contactForm.controls.city.touched || submitted) && contactForm.controls.city.errors?.['required']">
+                    City is required
+                </span>
+            </div>
+            <div class="form-group col-md-6">
+                <input type="text" class="form-control" placeholder="State" formControlName="state" required>
+                <span class="text-danger" *ngIf="(contactForm.controls.state.touched || submitted) && contactForm.controls.state.errors?.['required']">
+                    State is required
+                </span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-12">
+                <label for="email">*E-mail</label>
+                <input type="email" class="form-control" placeholder="" formControlName="email" required>
+
+                <span class="text-danger" *ngIf="(contactForm.controls.email.touched || submitted) && contactForm.controls.email.errors?.['required']">
+                    Email is required
+                </span>
+                <span class="text-danger" *ngIf="(contactForm.controls.email.touched || submitted) && contactForm.controls.email.errors?.['email']">
+                    Enter a valid email address
+                </span>
+
+            </div>
+        </div>
+
+        <div class="total-box">
+            Total: {{formatCurrency(basket.total)}}
+        </div>
+
+        <div class="cta">
+            <button type="submit" class="btn btn-primary" [disabled]="submitting || !basket.list.length">Pay</button>
+        </div>
+        
+    </form>
+</div>
+
+<div class="container checkout-container-success" *ngIf="success">
+    <div class="success">
+        <div>Thank you for your purchase</div>
+        <button routerLink="/" type="button" class="btn btn-primary">Buy more</button>
+    </div>
+</div>

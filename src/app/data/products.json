@@ -1,0 +1,43 @@
+[
+    {
+        "id": 0,
+        "image": "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 5.6,
+        "description": "Redragon S101 Wired Gaming Keyboard and Mouse Combo RGB Backlit Gaming Keyboard with Multimedia Keys Wrist Rest and Red Backlit Gaming Mouse 3200 DPI"
+    },{
+        "id": 1,
+        "image": "https://m.media-amazon.com/images/I/715XLKbQnFL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 46.99,
+        "description": "Dacoity Gaming Keyboard, 104 Keys All-Metal Panel, Rainbow LED Backlit Quiet Computer Keyboard, Wrist Rest, Multimedia Keys, Anti-ghosting Keys"
+    },{
+        "id": 2,
+        "image": "https://m.media-amazon.com/images/I/71tDhEbyPRL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 28.99,
+        "description": "Razer Ornata Chroma Gaming Keyboard: Hybrid Mechanical Key Switches - Customizable Chroma RGB Lighting - Individually Backlit Keys - Detachable Plush Wrist Rest"
+    },{
+        "id": 3,
+        "image": "https://m.media-amazon.com/images/I/81L8fk7SGQL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 99.99,
+        "description": "SteelSeries Apex 3 RGB Gaming Keyboard – 10-Zone RGB Illumination – IP32 Water Resistant – Premium Magnetic Wrist Rest (Whisper Quiet Gaming Switch)"
+    },{
+        "id": 4,
+        "image": "https://m.media-amazon.com/images/I/71S-pQNQyIL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 45.97,
+        "description": "Gaming Keyboard and Mouse and Mouse pad and Gaming Headset, Wired LED RGB Backlight Bundle for PC Gamers and Xbox and PS4 Users - 4 in 1 Edition Hornet RX-250"
+    },{
+        "id": 5,
+        "image": "https://m.media-amazon.com/images/I/61UGJ7z-sUL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 54.91,
+        "description": "Snpurdiri 60% Wired Gaming Keyboard, RGB Backlit Ultra-Compact Mini Keyboard, Waterproof Small Compact 61 Keys Keyboard for PC/Mac Gamer, Typist, Travel"
+    },{
+        "id": 6,
+        "image": "https://m.media-amazon.com/images/I/71qWTIo8XSL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 29.99,
+        "description": "KLIM Chroma Wireless Gaming Keyboard RGB New 2022 Version - Long-Lasting Rechargeable Battery - Quick and Quiet Typing - Water Resistant Backlit Wireless"
+    },{
+        "id": 7,
+        "image": "https://m.media-amazon.com/images/I/81VbPK0fFqL._AC_UY327_FMwebp_QL65_.jpg",
+        "price": 33.97,
+        "description": "Razer Huntsman V2 TKL Tenkeyless Gaming Keyboard: Fastest Clicky Optical Switches w/Quick Keystrokes & 8000Hz Polling Rate - Detachable Type-C Cable"
+    }
+]

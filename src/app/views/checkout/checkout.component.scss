@@ -1,0 +1,33 @@
+.checkout-container {
+
+    .form-group {
+        display: inline-block;
+        margin-bottom: 10px;
+        height: 80px;
+    }
+
+    .cta {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .text-danger {
+        position: absolute;
+    }
+
+}
+
+.checkout-container-success {
+
+    .success {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 300px;
+        font-size: 24px;
+
+        button {
+            margin-top: 20px;
+        }
+    }
+}
