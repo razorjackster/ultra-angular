@@ -52,7 +52,7 @@ export class BasketState {
             total: 0,
             startingFunds: getState().startingFunds - getState().total,
             funds: getState().startingFunds - getState().total,
-            bought: getState().list
+            bought: [...getState().bought, ...getState().list]
         });
     }
 

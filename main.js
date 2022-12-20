@@ -24,9 +24,9 @@ function openDevTools() {
 function createWindow() {
   win = new BrowserWindow({
     // horisontal size of the display in pixels
-    width: 1024,
+    width: 1280,
     // vertical size of the display in pixels
-    height: 600,
+    height: 800,
 
     // Frame should be enabled for dev environment
     frame: true,

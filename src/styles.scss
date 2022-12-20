@@ -1,0 +1,14 @@
+html, body, app-root, .root-container {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main-container {
+    overflow: auto;
+    height: calc(100% - 98px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
