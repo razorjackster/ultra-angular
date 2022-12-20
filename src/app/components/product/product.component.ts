@@ -9,7 +9,7 @@ import { FormatCurrency } from '../../util/common';
 })
 export class ProductComponent {
   
-  @Input() data: ProductModel;
+  @Input() data: ProductModel | undefined;
   @Input() disabled = false;
 
   @Output() clicked = new EventEmitter<ProductModel>();

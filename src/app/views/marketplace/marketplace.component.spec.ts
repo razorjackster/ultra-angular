@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NgxsModule } from '@ngxs/store';
 import { MarketplaceComponent } from './marketplace.component';
 
 describe('MarketplaceComponent', () => {
@@ -8,7 +8,8 @@ describe('MarketplaceComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MarketplaceComponent ]
+      declarations: [ MarketplaceComponent ],
+      imports: [NgxsModule.forRoot([])]
     })
     .compileComponents();
 

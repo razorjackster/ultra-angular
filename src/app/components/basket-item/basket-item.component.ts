@@ -9,7 +9,7 @@ import { FormatCurrency } from '../../util/common';
 })
 export class BasketItemComponent {
 
-  @Input() data: ProductModel;
+  @Input() data: ProductModel | undefined;
   @Output() deleteClicked = new EventEmitter<ProductModel>();
 
   formatCurrency = FormatCurrency;

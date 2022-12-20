@@ -1,4 +1,4 @@
-export function FormatCurrency(val: number): string {
+export function FormatCurrency(val: number | undefined): string {
     const value = val || 0;
-    return '$ ' + val.toFixed(2);
+    return '$ ' + value.toFixed(2);
 }
