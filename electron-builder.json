@@ -1,0 +1,32 @@
+{
+  "asar": true,
+  "appId": "ultra.demo",
+  "copyright": "me",
+  "directories": {
+    "output": "release/"
+  },
+  "files": [
+    "**/*",
+    "!artifacts",
+    "!ci",
+    "!docs",
+    "!package.json",
+    "!package-lock.json",
+    "!README.md",
+    "!**/*.ts",
+    "!*.map",
+    "!*.zip"
+  ],
+  "linux": {
+    "icon": "dist/assets/icons",
+    "target": [
+      "zip"
+    ]
+  },
+  "win": {
+    "icon": "dist/assets/icons",
+    "target": [
+      "zip"
+    ]
+  }
+}
